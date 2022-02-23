@@ -65,7 +65,7 @@ registerRoute(
 // registration.waiting.postMessage({type: 'SKIP_WAITING'})
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
-      console.log("sw skip waiting");
+      console.log("skip waiting registered");
     self.skipWaiting();
   }
 });
